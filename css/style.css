@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oleo+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Montserrat:wght@500&family=Oleo+Script&display=swap');
+
+body{
+    background-color: #27202c;
+    color: aliceblue;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+.letras{
+    font-family: 'Oleo Script', cursive;
+    font-size: 69px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    color: antiquewhite;
+}
+a:hover{
+    color: #f88706;
+    transition: 0.3s all;
+}
+.quem-eu-sou{
+    border: 2px solid #f88706;
+    padding: 14px;
+    border-radius: 15px;
+}
+.quem-eu-sou:hover{
+    background-color: #f88706;
+    color:white;
+
+}
+h1{
+    font-weight: 200;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+h2{
+    font-size: 42px;
+    line-height: 10px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 490;
+}
+
+p{
+    line-height:20px ;
+    max-width: 500px;
+}
+img{
+    width: 450px;
+   padding-left: 150px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: #683DC4;
+    color: aliceblue;
+    font-weight: bold;
+}
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+@media (max-width: 600px){
+    header{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 38px;
+    }
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+    input{
+        align-self: center;
+    }
+    img{
+        display: none;
+    }
+    ul{
+        text-align: center;
+    }
+}
+
